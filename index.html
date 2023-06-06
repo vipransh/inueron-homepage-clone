@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>ineuron</title>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                myBlue: '#233c7b',
+              }
+            }
+          }
+        }
+      </script>
+        
+</head>
+<body>
+    <!-- header -->
+    <div class="px-2 md:px-20 py-3">
+        <div class="flex flex-row items-center justify-between">
+            <img class="w-6 md:hidden flex" src="./assets/hamburger-menu.png"/>
+            <div>
+                <img class="w-32 md:w-36" src="./assets/ineuron-logo.png" alt="logo"/>
+            </div>
+            <div class="hidden md:flex flex-row border border-myBlue rounded-md px-2 py-2 w-[50%]">
+                <img class="h-6" src="./assets/search-icon.png"/>
+                <input class="border-none ml-3 w-full outline-none" type="text" placeholder="What do you want to learn?"/>
+            </div>
+            <div class="hidden md:flex">
+                <button class="text-myBlue px-6 py-2 font-medium">Sign up</button>
+                <button class="bg-myBlue text-white px-6 py-1.5 rounded-md">Sign in</button>
+            </div>
+            <img class="h-6 md:hidden" src="./assets/search-icon.png"/>
+        </div>
+        <div class="hidden md:flex flex-row items-center justify-between mt-4 px-2">
+           
+              <div class="text-myBlue font-semibold"><a href="#">Courses</a></div>
+              <div class="text-myBlue font-semibold"><a href="#">One Neuron</a></div>
+              <div class="text-myBlue font-semibold"><a href="#">Neuro Lab</a></div>
+              <div class="text-myBlue font-semibold"><a href="#">Job Portal</a></div>
+              <div class="text-myBlue font-semibold"><a href="#">Internship Portal</a></div>
+              <div class="text-myBlue font-semibold"><a href="#">Become an affiliate</a></div>
+              <div class="text-myBlue font-semibold"><a href="#">Hall of fame</a></div>
+              <div class="text-myBlue font-semibold"><a href="#">Company</a></div>
+        </div>
+    </div>
+    <!-- Image slider -->
+    <div class=" w-full ">
+        <div  class="carousel-item relative w-full">
+          <img src="./assets/banner-image1-fullsize.png" class="w-full hidden md:flex" />
+          <img src="./assets/banner-image1-mobile.png" class="w-full md:hidden" />
+        </div> 
+        
+      </div>
+      <!-- heading -->
+      <div class="w-full flex flex-col items-center justify-center pt-20 text-center">
+        <h1 class="font-bold text-4xl text-myBlue">“Pure Hardwork, No Shortcuts!”</h1>
+        <div class="bg-[#EA8E30] w-28 h-1 mt-4"></div>
+      </div>
+      <!-- feature cards -->
+      <div class="px-10 flex flex-col md:flex-row items-center justify-between mt-8 pb-20">
+        <!-- card -->
+        <div class="flex flex-col items-center gap-4">
+          <img class="w-40" src="./assets/books-icon.svg"/>
+          <h1 class="text-3xl text-myBlue font-bold">300+</h1>
+          <h1 class="font-bold text-3xl text-[#454545]">Different Courses</h1>
+        </div>
+        <div class="flex flex-col items-center gap-4">
+          <img class="w-40" src="./assets/student-iocn.svg"/>
+          <h1 class="text-3xl text-myBlue font-bold">400000+</h1>
+          <h1 class="font-bold text-3xl text-[#454545]">Students Enrolled</h1>
+        </div>
+        <div class="flex flex-col items-center gap-4">
+          <img class="w-40" src="./assets/credit-card-icon.svg"/>
+          <h1 class="text-3xl text-myBlue font-bold">10000+</h1>
+          <h1 class="font-bold text-3xl text-[#454545]">Successful Transition</h1>
+        </div>
+      </div>
+      <div class="bg-[#EEF0F5] py-24">
+        <div class="w-full flex items-center justify-center text-center">
+          <h1 class="text-4xl text-myBlue font-bold ">Our Achiever’s Work with</h1>
+        </div>
+        <div class="w-full mt-16">
+          <div class="flex flex-col md:flex-row items-center gap-10">
+             <div class="card">
+              <img src="./assets/geekyants.png" alt="Slide 1">
+             </div>
+             <div class="card">
+              <img src="./assets/oracle.png" alt="Slide 3">
+             </div>
+             <div class="card ">
+              <img src="./assets/ey.png" alt="Slide 2">
+             </div>
+             <div class="card ">
+              <img src="./assets/kpmg.png" alt="Slide 3">
+             </div>
+             <div class="card ">
+              <img src="./assets/kutumb.png" alt="Slide 3">
+             </div>
+          </div>
+       </div>
+      </div>
+      <!-- Hall of fame section -->
+      <div class="py-20">
+        <div class="w-full text-center">
+          <h1 class="text-4xl text-myBlue font-bold">Hall of fame</h1>
+        </div>
+        <!-- cards -->
+        <div class="flex flex-col md:flex-row items-center justify-between px-4 mt-14">
+          <div class=" md:w-[30%] flex flex-col gap-4 items-center px-4 rounded-lg py-10 shadow-xl ">
+            <img class="w-28 rounded-full" src="./assets/fameImage1.jpeg"/>
+            <h1 class="text-xl font-bold">Pritesh Badgujar</h1>
+            <p class="text-gray-500">I would like to express my heartfelt gratitude to Ineuron.ai for providing me with exceptional training that has paved the way for my successful</p>
+            <img class="w-10" src="./assets/linkedinIcon.png"/>
+          </div>
+          <div class="md:w-[30%] flex flex-col gap-4 items-center px-4 rounded-lg py-10 shadow-xl">
+            <img class="w-28 rounded-full object-scale-down" src="./assets/vip-img2.png"/>
+            <h1 class="text-xl font-bold">Vipransh Verma</h1>
+            <p class="text-gray-500">I would like to express my heartfelt gratitude to Ineuron.ai for providing me with exceptional training that has paved the way for my successful</p>
+            <img class="w-10" src="./assets/linkedinIcon.png"/>
+          </div>
+          <div class="md:w-[30%] flex flex-col gap-4 items-center px-4 rounded-lg py-10 shadow-xl">
+            <img class="w-28 rounded-full" src="./assets/fameImage2.jpeg"/>
+            <h1 class="text-xl font-bold">Jayesh Mahajan</h1>
+            <p class="text-gray-500">I would like to express my heartfelt gratitude to Ineuron.ai for providing me with exceptional training that has paved the way for my successful</p>
+            <img class="w-10" src="./assets/linkedinIcon.png"/>
+          </div>
+        </div>
+      </div>
+      <!-- Live program section -->
+      <div class="py-10">
+        <div class="text-center">
+          <h1 class="text-4xl text-myBlue font-bold">Live Program</h1>
+          <h3 class="mt-4 text-gray-600">Get your program with live "instructor led" learning.</h3>
+        </div>
+        <div class="flex flex-col md:flex-row items-center justify-between px-4">
+          <div class="md:w-[30%] flex flex-col gap-4  px-4 rounded-lg py-10 shadow-xl">
+            <img src="./assets/dataScienceImg.jpg"/>
+            <h1 class="text-myBlue font-bold text-xl">Full Stack Data Science Masters Live 2.0</h1>
+            <h1>Krish naik</h1>
+            <div class="flex flex-row items-center justify-between">
+              <h1 class="font-bold text-xl">&#8377 4000</h1>
+              <div class="bg-[#89CFF0] px-2 rounded-lg py-1">Live</div>
+            </div>
+          </div>
+          <div class="md:w-[30%] flex flex-col gap-4  px-4 rounded-lg py-10 shadow-xl">
+            <img class="rounded-lg" src="./assets/dsaImg.jpg"/>
+            <h1 class="text-myBlue font-bold text-xl">DSA in C++, Competitive Programming & IOT </h1>
+            <h1>Prateek Jain</h1>
+            <div class="flex flex-row items-center justify-between">
+              <h1 class="font-bold text-xl">&#8377 4000</h1>
+              <div class="bg-[#89CFF0] px-2 rounded-lg py-1">Live</div>
+            </div>
+          </div>
+          <div class="md:w-[30%] flex flex-col gap-4  px-4 rounded-lg py-10 shadow-xl">
+            <img class="rounded-lg" src="./assets/bigdataImg.jpg"/>
+            <h1 class="text-myBlue font-bold text-xl">Job Guaranteed BigData Bootcamp 2.0</h1>
+            <h1>Sudhanshu Kumar</h1>
+            <div class="flex flex-row items-center justify-between">
+              <h1 class="font-bold text-xl">&#8377 4000</h1>
+              <div class="bg-[#89CFF0] px-2 rounded-lg py-1">Live</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Affordable program -->
+      <div class="py-10 mt-14">
+        <div class="text-center">
+          <h1 class="text-4xl text-myBlue font-bold">Affordable Programs</h1>
+          <h3 class="mt-4 text-gray-600">Find your favourite courses in pocket-friendly ways.</h3>
+        </div>
+        <div class="flex flex-col md:flex-row items-center justify-between px-4">
+          <div class="md:w-[30%] flex flex-col gap-4  px-4 rounded-lg py-10 shadow-xl">
+            <img class="rounded-lg" src="./assets/afordableImg1.jpg"/>
+            <h1 class="text-myBlue font-bold text-xl">C++ Bootcamp for Beginners</h1>
+            <h1>Hitesh Choudhary</h1>
+            <h1 class="font-bold text-xl">&#8377 4000</h1>
+          </div>
+          <div class="md:w-[30%] flex flex-col gap-4  px-4 rounded-lg py-10 shadow-xl">
+            <img class="rounded-lg" src="./assets/afordableImg2.jpg"/>
+            <h1 class="text-myBlue font-bold text-xl">Dart Language</h1>
+            <h1>Hitesh Choudhary</h1>
+            <h1 class="font-bold text-xl">&#8377 4000</h1>
+          </div>
+          <div class="md:w-[30%] flex flex-col gap-4  px-4 rounded-lg py-10 shadow-xl">
+            <img class="rounded-lg" src="./assets/afordableImg3.jpg"/>
+            <h1 class="text-myBlue font-bold text-xl">Java Bootcamp for Beginners</h1>
+            <h1>Hitesh Choudhary</h1>
+            <h1 class="font-bold text-xl">&#8377 4000</h1>
+          </div>
+        </div>
+      </div>
+      <!-- One neuron -->
+      <div class="py-10 mt-14">
+        <div class="text-center">
+          <h1 class="text-4xl text-myBlue font-bold">One Neuron</h1>
+          <h3 class="mt-4 text-gray-600">New Neurons all day, every day.</h3>
+        </div>
+        <div class="flex flex-col md:flex-row items-center justify-between px-4">
+          <div class="md:w-[30%] flex flex-col gap-4  px-4 rounded-lg py-10 shadow-xl">
+            <img class="rounded-lg" src="./assets/oneNeuron1.jpg"/>
+            <p class="text-gray-500">Big Data Projects Neuron consists of high-quality projects curated by our premium mentors. These courses with projects will really help you to build a strong practical foundation in the field of data engineering.</p>
+            <h1 class="font-bold text-xl">&#8377 15000</h1>
+          </div>
+          <div class="md:w-[30%] flex flex-col gap-4  px-4 rounded-lg py-10 shadow-xl">
+            <img class="rounded-lg" src="./assets/oneNeuron2.jpg"/>
+            <p class="text-gray-500">Big Data Projects Neuron consists of high-quality projects curated by our premium mentors. These courses with projects will really help you to build a strong practical foundation in the field of data engineering.</p>
+            <h1 class="font-bold text-xl">&#8377 14000</h1>
+          </div>
+          <div class="md:w-[30%] flex flex-col gap-4  px-4 rounded-lg py-10 shadow-xl">
+            <img class="rounded-lg" src="./assets/oneNeuron3.jpg"/>
+            <p class="text-gray-500">Big Data Projects Neuron consists of high-quality projects curated by our premium mentors. These courses with projects will really help you to build a strong practical foundation in the field of data engineering.</p>
+            <h1 class="font-bold text-xl">&#8377 17000</h1>
+          </div>
+        </div>
+      </div>
+      <!-- Hackathons -->
+      <div class="py-20 flex flex-col items-center">
+        <div class="text-center">
+          <h1 class="text-4xl text-myBlue font-bold">Hackathon's We Conducted</h1>
+        </div>
+        <img class="object-scale-down mt-16" src="./assets/githubImg.png"/>
+      </div>
+      <!-- Products -->
+      <div class="pt-20">
+        <div class="text-center">
+          <h1 class="text-4xl text-myBlue font-bold">Our Products</h1>
+        </div>
+        <div class="flex flex-col md:flex-row items-center justify-center gap-8 mt-8">
+          <div class="md:w-[25%] flex flex-col items-center px-2 py-8 gap-4">
+            <img src="./assets/neurolab-icon.svg"/>
+            <h1 class="text-myBlue font-bold text-xl">Neuro Lab</h1>
+            <p class="text-gray-600">Supercharge your project development with our robust lab.</p>
+          </div>
+          <div class="md:w-[25%] flex flex-col items-center px-2 py-8 gap-4">
+            <img src="./assets/jobPortal-icon.svg"/>
+            <h1 class="text-myBlue font-bold text-xl">Job Portal</h1>
+            <p class="text-gray-600">Use exceptional templates for a stand-out resume minus the sign up process.</p>
+          </div>
+          <div class="md:w-[25%] flex flex-col items-center px-2 py-8 gap-4">
+            <img src="./assets/Internship-icon.svg"/>
+            <h1 class="text-myBlue font-bold text-xl">Internship Portal</h1>
+            <p class="text-gray-600">iNeuron's self-paced internship portal prioritises hands-on training with 570+ internship projects.</p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center justify-center gap-8 mt-8">
+          <div class="md:w-[25%] flex flex-col items-center px-2 py-8 gap-4">
+            <img src="./assets/affilitatePortal-icon.svg"/>
+            <h1 class="text-myBlue font-bold text-xl">Become an affiliate</h1>
+            <p class="text-gray-600">Explore affiliate marketing opportunities with iNeuron and attain financial frredom.</p>
+          </div>
+          <div class="md:w-[25%] flex flex-col items-center px-2 py-8 gap-4">
+            <img src="./assets/halloffame-icon.svg"/>
+            <h1 class="text-myBlue font-bold text-xl">Hall of fame</h1>
+            <p class="text-gray-600">Our student placements and 100K+ career transitions speak volumes about our courses.</p>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <div class="bg-[#1434A4] w-full py-20 flex flex-col md:flex-row gap-4 md:justify-between px-20 text-white">
+        <div class="flex flex-col gap-4">
+          <div class=" border-b-2 border-[#EA8E30] pb-4">
+            <img src="./assets/ineuron-logo-white.png"/>
+            <div class="flex items-center gap-4">
+              <img src="./assets/icons8-facebook-24 (1).png"/>
+            <img src="./assets/icons8-twitter-24.png"/>
+            </div>
+          </div>
+          <div>
+            <h1 class="ml-10">17th Floor Tower A, Brigade <br> Signature Towers,</h1>
+          </div>
+          <div class="flex  gap-4">
+            <img class="h-6" src="./assets/icons8-location-48.png"/>
+            <h1>Sannatammanahalli,<br> Bengaluru, Karnataka <br> 562129.</h1>
+          </div>
+          <div  class="flex gap-4">
+            <img class="h-6" src="./assets/icons8-email-30.png"/>
+            <h1><span class="font-bold">Email us:</span> <br>contact@ineuron.ai</h1>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4">
+          <div class="border-b-2 border-[#EA8E30] pb-4">
+            <h1 class="text-xl font-bold">Company</h1>
+          </div>
+          <div class="flex">
+            <h1>About us</h1>
+            <h1 class="ml-14">Contact us</h1>
+          </div>
+          <div class="flex">
+            <h1>Community</h1>
+            <h1 class="ml-10">Hack-A-Thon</h1>
+          </div>
+          <div class="flex">
+            <h1>FAQs</h1>
+            <h1 class="ml-20">Job <br> guarantee</h1>
+          </div>
+          <div class="flex gap-12">
+            <h1>Job <br> assitance</h1>
+            <h1>Privacy policy</h1>
+          </div>
+          <h1>Terms and <br> conditions</h1>
+        </div>
+        <div class="flex flex-col gap-4">
+          <div class="border-b-2 border-[#EA8E30] pb-4">
+            <h1 class="text-xl font-bold" >Products</h1>
+          </div>
+          <h1>Neuro Lab</h1>
+          <h1>Job Portal</h1>
+          <h1>Internship portal</h1>
+          <h1>Internship portal</h1>
+          <h1>Hall of fame</h1>
+        </div>
+      </div>
+</body>
+</html>
